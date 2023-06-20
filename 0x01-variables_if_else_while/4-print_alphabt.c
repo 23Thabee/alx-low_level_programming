@@ -1,26 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <string.h>
 
 /**
-*main -Entry point
+*main -Print the alphabet without q and e
 *Return: Always 0 (Success)
 */
 
 int main(void)
-
 {
 
-	char low, e, q;
+	int i;
 
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
-	
-	if  (low != 'e' && low != 'q')
-	putchar(low);
-	
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i !=113)
+		{
+			putchar(i);
+		}
+	}
 	putchar('\n');
 	return (0);
 }
