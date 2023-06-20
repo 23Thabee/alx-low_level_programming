@@ -11,7 +11,7 @@ int main(void)
 
 {
 
-	char low, (e), (q);
+	char low, e, q;
 
 	e = 'e';
 	q = 'q';
@@ -21,6 +21,6 @@ int main(void)
 	if  (low != 'e' && low != 'q')
 	putchar(low);
 	
-	putchar('n');
+	putchar('\n');
 	return (0);
 }
